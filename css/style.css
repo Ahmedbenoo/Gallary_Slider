@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+/* Parent Div */
+.gallary-slider{
+    padding-top: 100px;
+    position: relative;
+}
+/* Slideshow container */
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    margin: auto;
+  }
+  /* mySlides */
+.mySlides {
+    display: none
+}
+img {
+    vertical-align: middle;
+}
+.slide {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background:rgba(0, 0, 0, 0.9);
+    overflow: hidden;
+}
+.sea-all{
+    list-style: none;
+    outline: none;
+    text-decoration: none;
+    position: absolute;
+    left: 64%;
+    top: -4px;
+    color: rgba(0, 255, 166, 0.774);
+    cursor: pointer;
+    font-size: 20px;
+    opacity: 1;
+    z-index: 99;
+    font-weight: 700;
+    background: transparent;
+}
+.sea-all:hover{
+    opacity: .8;
+}
+.shapes {
+    position: absolute;
+    width: 60%;
+    transform: rotateZ(20deg);
+    height: 700px;
+    left:-50px;
+    top: -300px;
+}
+@media(max-width:1700px){
+    .shapes {
+        position: absolute;
+        top: -300px;
+        left:45px;
+        width: 60%;
+        height: 500px;
+        transform: rotateZ(33deg)
+    }
+}
+
+.shape {
+    width: 8%;
+    height: 1000px;
+    float: left;
+    z-index: 99;
+    margin: 0 8px 0 0;
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.x{
+    width: 40% !important;
+}
+.shape0 {
+    background-image: url(../assets/img1.png);
+}
+.shape1 {
+    background-image: url(../assets/img3.png);
+}
+.shape2 {
+    background-image: url(../assets/img4.png);
+}
+.shape3 {
+    background-image: url(../assets/img5.png);
+}
+.shape4 {
+    background-image: url(../assets/img6.png);
+}
+.shape5 {
+    background-image: url(../assets/img7.png);  
+}
+.shape6 {
+    background-image: url(../assets/img8.png);
+}
+.shape7 {
+    background-image: url(../assets/img9.png);
+}
+.shape8 {
+    background-image: url(../assets/img4.png);
+}
+.shape9 {
+    background-image: url(../assets/img6.png);
+}
+.shape10 {
+    background-image: url(../assets/img12.png);
+}
+.shape11 {
+    background-image: url(../assets/img4.png);
+}
+.shape12 {
+    background-image: url(../assets/img10.png);
+}
+.shape13 {
+    background-image: url(../assets/img7.png);
+}
+.shape14 {
+    background-image: url(../assets/img9.png);
+}
+.shape15 {
+    background-image: url(../assets/img5.png);
+}
+.shape16 {
+    background-image: url(../assets/img12.png);
+}
+.shape17 {
+    background-image: url(../assets/img10.png);
+}
+.shape18 {
+    background-image: url(../assets/img7.png);
+}
+.shape19 {
+    background-image: url(../assets/img9.png);
+}
+.shape20 {
+    background-image: url(../assets/img7.png);
+}
+
+.slide-text{
+    position: absolute;
+    width: max-content;
+    left: 60%;
+    top: 40%;
+    padding:0 20px;
+    color: #fff;
+    
+}
+.d-flex{
+    display: flex;
+    flex-direction: row;
+    padding: 20px 0;
+    position: relative;
+}
+.bi{
+    background: #fff;
+    color: dodgerblue;
+    margin-right: 10px;
+    margin-top: 2px
+}
+.slide-text .d-flex h2{
+    font-size: 20px;
+    font-weight: 700;
+}
+.slide-text p{
+    text-align: start;
+    font-size: 16px;
+    color: #262626;
+    font-weight: 700;
+    width: 250px;
+}
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 60.5%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .prev{
+      left: -40px;
+  }
+  .next{
+      right: -25px;
+      border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  /* Dots */
+.dots{
+    position: absolute;
+    left: 15%;
+}
+.dot {
+  cursor: pointer;
+  height: 7px;
+  width: 7px;
+  margin: 0 10px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color:rgba(0, 255, 166, 0.774);
+  border: none;
+}
+
+/* footer */
+.footer{
+    background-color: transparent;
+    width: 100%;
+    padding: 50px 0;
+    margin-top: 40px;
+    text-align: center;
+}
+.col{
+    color:rgba(0, 255, 166, 0.774) ;
+    opacity: 0.7;
+    font-size: medium;
+    cursor: pointer;
+}
+.col:hover{
+  opacity: 1;
+}
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+  
+  @keyframes fade {
+    from {transform: scale(0);} 
+    to {transform: scale(1);}
+  }
+
+/* Media Query */
+@media(max-width:1520px){
+    .shapes {
+        transform: rotateZ(31.5deg)
+    }
+
+}
+@media(max-width:1350px){
+    .shapes {
+        transform: rotateZ(30deg)
+    }
+
+}
+@media(max-width:1250px){
+    .shapes {
+        transform: rotateZ(28.5deg)
+    }
+}
+
+@media(max-width:1120px){
+    .shapes {
+        transform: rotateZ(26.5deg)
+    }
+
+}
+@media(max-width:990px){
+    .shapes {
+        transform: rotateZ(25deg)
+    }  
+}
+@media(max-width:820px){
+    .shapes {
+        left:0px;
+        width: 62%;
+        transform: rotateZ(19deg)
+    }  
+    .sea-all{
+        left: 65%;
+    }
+    .slide-text {
+        left: 58%;
+        top: 45%;
+    }
+    .prev {
+        left: -35px;
+    }
+    .next {
+        right: -8px;
+    }
+}
+@media(max-width:767px){
+    .shapes {
+        left:0px;
+        width: 100%;
+        transform: rotateZ(15deg)
+    }  
+    .x{
+        width: 30% !important;
+    }
+    .sea-all{
+        left: 75%;
+        top: 95%;
+        z-index: 999999999;
+    }
+    .slide-text {
+        left: 14%;
+        top: 50%;
+        background: rgba(0, 0, 0, 0.3);
+    }
+    .prev {
+        left: -35px;
+    }
+    .next {
+        right: -8px;
+    }
+    .d-flex,
+    .slide-text .d-flex h2,
+    .slide-text p,
+    .prev,
+    .next{
+        background: transparent;
+    }
+    .slide-text p{
+        color:rgba(255, 255, 255, 0.784) ;
+        font-weight: 500;
+        padding-right: 30px;
+    }
+
+}
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
